@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form prac</title>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <form action="http://www.yahoo.com">
+      <!-- goes in form   action="http://www.yahoo.com" method="GET"  -->
+      <label>
+        Username:
+        <input name="username" type="text" placeholder="username" required
+      /></label>
+
+      <label>
+        Email:
+        <input name="email" type="email" placeholder="email" required
+      /></label>
+
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        placeholder="password"
+      />
+
+      <input type="submit" />
+    </form>
+    <form action="">
+      <p>Do you prefer cats or dogs?</p>
+      <label for="dog">Dog</label>
+      <input name="petChoice" id="dog" type="radio" value="dog" />
+      <label for="cat">Cat</label>
+      <input name="petChoice" id="cat" type="radio" value="cat" />
+
+      <p>Whats your mood?</p>
+      <select name="mood" id="">
+        <option value="happy">:)</option>
+        <option value="neitral">:|</option>
+        <option value="sad">:(</option>
+      </select>
+      <button>Go</button>
+      <input type="checkbox" />
+      <textarea name="paragraph" id="" cols="30" rows="10"></textarea>
+    </form>
+  </body>
+</html>

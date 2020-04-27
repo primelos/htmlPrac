@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Test</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form>
+      <label for="firstname">First Name:</label>
+      <input name="firstname" type="text" required placeholder="John" />
+      <label for="lastname">Last Name:</label>
+      <input name="lastname" type="text" required placeholder="Smith" />
+      <div>
+        <label for="male">Male:</label>
+        <input id='male' name="gender" type="radio" value="Male" />
+        <label for="female">Female</label>
+        <input id='female' name="gender" type="radio" value="Female" />
+        <label for="other">Other</label>
+        <input id='other' name="gender" type="radio" value="other" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          name="email"
+          type="email"
+          placeholder="your email"
+          id="email"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          required
+          pattern='.{5,10}'
+          title='Password must be between 5 to 10 characters'
+          placeholder="password"
+        />
+      </div>
+      <div>
+          <fieldset >
+              <legend>Birthday:</legend>
+        <label for="birthday">Month:</label>
+        <select name="month" id="month">
+          <option name="jan" value="January">January</option>
+          <option name="feb" value="February">February</option>
+        </select>
+        <label for="birthday">Day:</label>
+
+        <select name="day" id="day">
+          <option name="1" value="1">1</option>
+          <option name="2" value="2">2</option>
+        </select>
+        <label for="birthday">Year:</label>
+
+        <select name="year" id="year">
+          <option name="2020" value="2020">2020</option>
+          <option name="2019" value="2019">2019</option>
+        </select>
+
+    </fieldset>
+      </div>
+      <div>
+        <label for="terms"
+          >I agree to the terms and conditions</label
+        >
+        <input name='terms' id='terms' type="checkbox" />
+      </div>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
